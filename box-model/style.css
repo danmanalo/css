@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* 
+    CSS Box Model consists content, padding, border, and margin.
+    content is the core or what is inside
+    padding is the measure from content and border
+    border is the measure after padding
+    margin is the measure outside border
+    box-sizing property has two types
+    box-sizing: content-box - default that excludes the measurement of padding, border, and margin
+    box-sizing: border-box - includes padding, border, and margin measurement in the entire width and height
+    */
+}
+
+.content {
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: antiquewhite;
+}
