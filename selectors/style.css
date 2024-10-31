@@ -1,0 +1,118 @@
+/* 
+SELECTORS
+*/
+
+* {
+    /* 
+    color: blueviolet;
+    This makes the text color of the whole page 'blueviolet'
+    Universal Selector
+    This selects every HTML element on the page
+     Syntax: 
+    asterisk(*) { property: attribute }
+    */
+}
+
+p {
+    /* 
+    color: red;
+    This makes the text color of all p elements red
+    Type Selector
+    This selects the type of HTML element
+    Syntax: 
+    elementname { property: attribute }
+    */
+}
+
+.class {
+    /* 
+    color: green;
+    This makes the text color of all elements with class named 'class' green
+    Class Selector
+    This selects an elements class
+    Syntax: 
+    .classname { property: attribute; } 
+    */
+}
+
+#id {
+    /* 
+    color: blue;
+    This makes the text color of all elements with id named 'id' blue
+    ID Selector
+    This selects an elements ID
+    Syntax: 
+    .idname { property: attribute; } 
+    */
+}
+
+[attribute = 'value'] {
+    /* 
+    color: whitesmoke;
+    This makes the text color of all elements that have an attribute and value of "attribute = 'value'" whitesmoke
+    Attribute Selector
+    This selects the attribute with/without value
+    Syntax: 
+    [attributename='value']
+    [attributename='value' s] for case sensite
+    PS. you can exclude value and just write the attribute
+    */
+}
+
+p, .class {
+    /* 
+    Grouping Selector
+    This selects mutiple elements by group multiple slectors using comma
+    Syntax: 
+    selector1, selector2, ... { property: value; }
+    */
+}
+
+/* 
+Pseudo Classes
+This reacts to the interaction of a user
+Syntax:
+selector:hover { property: value; }
+
+Pseudo Elements
+This is used for inserting elements but may also be used in styling 
+Syntax:
+selector::before { property: value; }
+*/
+
+/* 
+Combinators 
+
+Descendant Combinator
+Allows you to select a specific element based on their position on the document
+Example: 
+p em {
+        color: red;
+}
+It selects all em elements that's a child element of p element
+
+Next sibling combinator (+)
+Allows you to select an element that is immediately after another, must have the same parent
+Example:
+div + p {
+        color: blue;
+}
+this selects all p elements that is immediately after all div element
+
+
+Subsequent sibling combinator (~)
+Allows you to select the second element that follow the first element (even not immediately) also share the same parent element
+div ~ p {
+        color: blue;
+}
+this selects all p elements that is after all div element
+
+Child combinator (>)
+Allows you to select direct children only and not all descendants
+*/
+
+
+
+
+
+
